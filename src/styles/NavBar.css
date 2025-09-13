@@ -1,0 +1,90 @@
+/* Navbar Base */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    border-bottom: 1px solid #780083;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.logo span {
+    color: #780083;
+}
+.logo:hover {
+    transform: scale(1.1) rotate(-2deg);
+    color: #780083;
+    text-shadow: 0 0 8px rgba(120,0,131,0.6);
+}
+
+/* Links */
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background: linear-gradient(90deg, #780083, #e600e6);
+    transition: width 0.3s ease;
+    border-radius: 5px;
+}
+
+.link:hover {
+    color: #780083;
+}
+.link:hover::after {
+    width: 100%;
+}
+
+.link.active {
+    color: #780083;
+}
+
+.link.active::after {
+    width: 100%;
+}
+
+/* Auth buttons */
+.auth-btn {
+    border: none;
+    margin: 5px;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #780083, #b100b8);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(120,0,131,0.7);
+}
