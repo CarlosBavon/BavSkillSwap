@@ -1,0 +1,71 @@
+.card {
+  position: absolute;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-content {
+  position: absolute;
+  top: 15px;   /* controls distance from top */
+  left: 15px;  /* controls distance from left */
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* optional: add contrast */
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin: auto;
+  border-radius: 12px;
+  margin-top: 30px;
+  background-color: #780083;
+}
+.hero-content {
+  max-width: 50%;
+  margin-left: 30px;
+}
+
+.hero h1 {
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #fff;
+  color: #6a11cb;
+}
+
+.btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}

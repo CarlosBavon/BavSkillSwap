@@ -11,6 +11,15 @@ body {
   font-style: normal;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../public/fonts/cetrinn.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 code {
