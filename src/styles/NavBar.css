@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 30px;
+    background: #edb4fc;
     border-bottom: 1px solid #780083;
     box-shadow: 0 2px 8px rgba(92, 0, 95, 0.8);
     z-index: 1000;

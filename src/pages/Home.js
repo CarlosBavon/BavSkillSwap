@@ -4,8 +4,29 @@ import SoftwareEngineering from "../images/software-engineering.jpg";
 import ComputerScience from "../images/computer-science.jpg";
 import WebDesign from "../images/web-design.jpg";
 import GraphicDesign from "../images/graphic.jpg";
+import Testimonials from "../components/Testimonials";
+import CircularGallery from "../components/CircularGallery";
+import {
+  Camera,
+  Mesh,
+  Plane,
+  Program,
+  Renderer,
+  Texture,
+  Transform,
+} from "ogl";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const skills = [
+    { name: "Web Development", icon: "💻" },
+    { name: "Graphic Design", icon: "🎨" },
+    { name: "Cooking", icon: "🍳" },
+    { name: "Photography", icon: "📷" },
+    { name: "Music", icon: "🎶" },
+    { name: "Language Exchange", icon: "🗣️" },
+  ];
+
   return (
     <>
       <div className="hero">
@@ -13,8 +34,8 @@ export default function Home() {
           <h1>Swap Skills, Not Money.</h1>
           <p>
             Learn new things, share what you know, and connect with people who
-            want to exchange knowledge. From coding to cooking,
-            SkillSwap Hub makes learning social and affordable.
+            want to exchange knowledge. From coding to cooking, SkillSwap Hub
+            makes learning social and affordable.
           </p>
           <div className="hero-buttons">
             <a href="/signup" className="btn-primary">
@@ -75,6 +96,38 @@ export default function Home() {
           </CardSwap>
         </div>
       </div>
+      <section className="how-it-works">
+        <h2 className="how-title">How It Works</h2>
+        <div className="steps">
+          <div className="step">
+            <div className="icon">👤</div>
+            <h3>Create Your Profile</h3>
+            <p>List your skills and the ones you want to learn.</p>
+          </div>
+          <div className="step">
+            <div className="icon">🔍</div>
+            <h3>Find a Match</h3>
+            <p>Browse categories or get personalized skill suggestions.</p>
+          </div>
+          <div className="step">
+            <div className="icon">🤝</div>
+            <h3>Swap & Learn</h3>
+            <p>Connect with people, exchange skills, and grow together.</p>
+          </div>
+        </div>
+      </section>
+      <section className="popular-skills">
+        <h2 className="skills-title">Popular Skill Categories</h2>
+        <div style={{ height: "500px", position: "relative" }}>
+          <CircularGallery
+            bend={1}
+            textColor="#ffffff"
+            borderRadius={0.05}
+            scrollEase={0.02}
+          />
+        </div>
+      </section>
+      <Testimonials />
     </>
   );
 }
