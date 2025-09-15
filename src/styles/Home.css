@@ -28,6 +28,7 @@
   border-radius: 12px;
   margin-top: 30px;
   background-color: #780083;
+  padding-bottom: 30px;
 }
 .hero-content {
   max-width: 50%;
@@ -93,7 +94,7 @@
 }
 
 .step {
-  background: #780083;
+  border: 3px solid #780083;
   border-radius: 12px;
   padding: 30px 20px;
   width: 280px;
@@ -113,12 +114,12 @@
 .step h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #f0f0f0;
+  color: #780083;
 }
 
 .step p {
   font-size: 1rem;
-  color: #edb4fc;
+  color: #000000;
 }
 
 .popular-skills {

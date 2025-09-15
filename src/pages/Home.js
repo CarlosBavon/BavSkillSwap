@@ -1,4 +1,5 @@
 import CardSwap, { Card } from "../components/CardSwap";
+import { FaUserAlt, FaSearch, FaHandshake } from "react-icons/fa";
 import "../styles/Home.css";
 import SoftwareEngineering from "../images/software-engineering.jpg";
 import ComputerScience from "../images/computer-science.jpg";
@@ -100,28 +101,35 @@ export default function Home() {
         <h2 className="how-title">How It Works</h2>
         <div className="steps">
           <div className="step">
-            <div className="icon">👤</div>
+            <div className="icon">
+              <FaUserAlt size={60} color="#780083" />
+            </div>
             <h3>Create Your Profile</h3>
             <p>List your skills and the ones you want to learn.</p>
           </div>
           <div className="step">
-            <div className="icon">🔍</div>
+            <div className="icon">
+              <FaSearch size={60} color="#780083" />
+            </div>
             <h3>Find a Match</h3>
             <p>Browse categories or get personalized skill suggestions.</p>
           </div>
           <div className="step">
-            <div className="icon">🤝</div>
+            <div className="icon">
+              <FaHandshake size={60} color="#780083" />
+            </div>
             <h3>Swap & Learn</h3>
             <p>Connect with people, exchange skills, and grow together.</p>
           </div>
         </div>
       </section>
+
       <section className="popular-skills">
         <h2 className="skills-title">Popular Skill Categories</h2>
         <div style={{ height: "500px", position: "relative" }}>
           <CircularGallery
             bend={1}
-            textColor="#ffffff"
+            textColor="#780083"
             borderRadius={0.05}
             scrollEase={0.02}
           />
