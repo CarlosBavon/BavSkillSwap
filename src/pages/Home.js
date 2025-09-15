@@ -7,27 +7,8 @@ import WebDesign from "../images/web-design.jpg";
 import GraphicDesign from "../images/graphic.jpg";
 import Testimonials from "../components/Testimonials";
 import CircularGallery from "../components/CircularGallery";
-import {
-  Camera,
-  Mesh,
-  Plane,
-  Program,
-  Renderer,
-  Texture,
-  Transform,
-} from "ogl";
-import { useEffect, useRef } from "react";
 
 export default function Home() {
-  const skills = [
-    { name: "Web Development", icon: "💻" },
-    { name: "Graphic Design", icon: "🎨" },
-    { name: "Cooking", icon: "🍳" },
-    { name: "Photography", icon: "📷" },
-    { name: "Music", icon: "🎶" },
-    { name: "Language Exchange", icon: "🗣️" },
-  ];
-
   return (
     <>
       <div className="hero">
