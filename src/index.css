@@ -11,9 +11,32 @@ body {
   font-style: normal;
   overflow-x: hidden;
 }
-body::-webkit-scrollbar {
-  display: none;
+
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #780083; /* purple thumb */
+  border-radius: 10px;
+  border: 2px solid #f2f2f2; /* creates gap effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a020a0; /* brighter purple on hover */
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #780083 #f2f2f2;
+}
+
 @font-face {
   font-family: 'MyCustomFont';
   src: url('../public/fonts/cetrinn.otf') format('truetype');
