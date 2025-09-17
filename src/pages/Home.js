@@ -7,6 +7,7 @@ import WebDesign from "../images/web-design.jpg";
 import GraphicDesign from "../images/graphic.jpg";
 import Testimonials from "../components/Testimonials";
 import CircularGallery from "../components/CircularGallery";
+import Stepper, { Step } from "../components/Stepper";
 
 export default function Home() {
   return (
@@ -80,29 +81,54 @@ export default function Home() {
       </div>
       <section className="how-it-works">
         <h2 className="how-title">How It Works</h2>
-        <div className="steps">
-          <div className="step">
+        <Stepper
+          initialStep={1}
+          onStepChange={(step) => {
+            console.log(step);
+          }}
+          onFinalStepCompleted={() => console.log("All steps completed!")}
+          backButtonText="Previous"
+          nextButtonText="Next"
+        >
+          <Step>
+            <h2>Welcome to the Skill Swap Hub!</h2>
+            <p>Check out the next step!</p>
+          </Step>
+          <Step>
             <div className="icon">
               <FaUserAlt size={60} color="#780083" />
             </div>
-            <h3>Create Your Profile</h3>
+            <h2>Create Your Profile!</h2>
+            <img
+              style={{
+                height: "100px",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center -70px",
+                borderRadius: "15px",
+                marginTop: "1em",
+              }}
+              alt="Cute Cat"
+              src="https://www.purrfectcatgifts.co.uk/cdn/shop/collections/Funny_Cat_Cards_640x640.png?v=1663150894"
+            />
             <p>List your skills and the ones you want to learn.</p>
-          </div>
-          <div className="step">
+          </Step>
+          <Step>
             <div className="icon">
               <FaSearch size={60} color="#780083" />
             </div>
-            <h3>Find a Match</h3>
+            <h2>Find a Match?</h2>
             <p>Browse categories or get personalized skill suggestions.</p>
-          </div>
-          <div className="step">
+          </Step>
+          <Step>
+            <h2>Final Step</h2>
             <div className="icon">
               <FaHandshake size={60} color="#780083" />
             </div>
-            <h3>Swap & Learn</h3>
+            <h3>Swap & Learn!</h3>
             <p>Connect with people, exchange skills, and grow together.</p>
-          </div>
-        </div>
+          </Step>
+        </Stepper>
       </section>
 
       <section className="popular-skills">
