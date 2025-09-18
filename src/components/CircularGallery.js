@@ -1,6 +1,17 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
 import { useEffect, useRef } from 'react';
-
+import SoftwareEngineering from './images/SoftwareEngineering.jpg';
+import ComputerScience from './images/ComputerScience.jpg';
+import Cooking from './images/Cooking.jpg';
+import WebDesign from './images/WebDesign.jpg';
+import Music from './images/Music.jpg';
+import Drawing from './images/Drawing.jpg';
+import Photography from './images/Photography.jpg';
+import LanguageLearning from './images/LanguageLearning.jpg';
+import CreativeWriting from './images/CreativeWriting.jpg';
+import FitnessYoga from './images/Fitness.jpg';
+import ContentCreation from './images/ContentCreation.jpg';
+import GraphicDesign from './images/GraphicDesign.jpg';
 import '../styles/Circular.css';
 
 function debounce(func, wait) {
@@ -334,18 +345,18 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: 'Software Engineering' },
-      { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: 'Computer Science' },
-      { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: 'Cooking' },
-      { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: 'Web Design' },
-      { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: 'Music' },
-      { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: 'Drawing' },
-      { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: 'Photography & Editing' },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: 'Language Learning' },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: 'Creative Writing' },
-      { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: 'Fitness & Yoga' },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: 'Content Creation' },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Graphic Design' }
+      { image: SoftwareEngineering, text: 'Software Engineering' },
+      { image: ComputerScience, text: 'Computer Science' },
+      { image: Cooking, text: 'Cooking' },
+      { image: WebDesign, text: 'Web Design' },
+      { image: Music, text: 'Music' },
+      { image: Drawing, text: 'Drawing' },
+      { image: Photography, text: 'Photography & Editing' },
+      { image: LanguageLearning, text: 'Language Learning' },
+      { image: CreativeWriting, text: 'Creative Writing' },
+      { image: FitnessYoga, text: 'Fitness & Yoga' },
+      { image: ContentCreation, text: 'Content Creation' },
+      { image: GraphicDesign, text: 'Graphic Design' }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
