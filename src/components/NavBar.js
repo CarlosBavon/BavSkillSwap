@@ -49,11 +49,8 @@ export default function NavBar() {
       </div>
 
       <div className="auth">
-        <NavLink to="/login" className="auth-btn">
-          LOGIN
-        </NavLink>
-        <NavLink to="/signup" className="auth-btn">
-          SIGN UP
+        <NavLink to="/auth" className="auth-btn">
+          SIGN IN / SIGN UP
         </NavLink>
       </div>
     </nav>
