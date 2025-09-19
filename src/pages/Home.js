@@ -21,7 +21,7 @@ export default function Home() {
             makes learning social and affordable.
           </p>
           <div className="hero-buttons">
-            <a href="/signup" className="btn-primary">
+            <a href="/auth" className="btn-primary">
               Get Started
             </a>
             <a href="/browse" className="btn-secondary">
